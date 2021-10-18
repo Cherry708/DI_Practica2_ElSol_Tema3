@@ -1,0 +1,17 @@
+<resources>
+    <string name="card0">Corona solar</string>
+    <string name="card1">Erupcion solar</string>
+    <string name="card2">Espiculas</string>
+    <string name="card3">Filamentos</string>
+    <string name="card4">Magnetosfera</string>
+    <string name="card5">Mancha solar</string>
+
+
+
+    <string name="app_name">DI_Practica2_ElSol_Tema3</string>
+    <string name="renombrar">Renombrar</string>
+    <string name="copiar">Copiar</string>
+    <string name="cortar">Cortar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="mover">Mover</string>
+</resources>

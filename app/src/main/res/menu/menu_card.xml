@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Componente que solo es visible al hacer click en el menu debido a showAsAction:never -->
+    <item android:id="@+id/action_renombrar"
+        android:title="@string/renombrar"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_copiar"
+        android:title="@string/copiar"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_cortar"
+        android:title="@string/cortar"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_eliminar"
+        android:title="@string/eliminar"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_Mover"
+        android:title="@string/mover"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>
