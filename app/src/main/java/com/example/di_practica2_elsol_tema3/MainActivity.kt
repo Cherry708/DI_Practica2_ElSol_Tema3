@@ -1,7 +1,10 @@
 package com.example.di_practica2_elsol_tema3
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.GridLayout
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
@@ -35,5 +38,22 @@ class MainActivity : AppCompatActivity() {
 
         adaptador.onClick = {
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_main_activity, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val itemId = item.itemId
+        when(item.itemId){
+            (R.id.action_comparar) -> lanzarComparar()
+        }
+        return true
+    }
+
+    fun lanzarComparar(){
+        startActivity(Intent(this,CompararPlanetas::class.java))
     }
 }

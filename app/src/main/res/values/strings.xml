@@ -7,11 +7,13 @@
     <string name="card5">Mancha solar</string>
 
 
-
     <string name="app_name">DI_Practica2_ElSol_Tema3</string>
     <string name="renombrar">Renombrar</string>
     <string name="copiar">Copiar</string>
     <string name="cortar">Cortar</string>
     <string name="eliminar">Eliminar</string>
     <string name="mover">Mover</string>
+
+    <string name="comparar">Comparar planetas</string>
+    <string name="comparar_planetas">Comparar planetas</string>
 </resources>

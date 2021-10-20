@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DI_Practica2_ElSol_Tema3">
         <activity
+            android:name=".CompararPlanetas"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

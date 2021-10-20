@@ -15,18 +15,19 @@ class ItemCardAdapter(var listaItems: ArrayList<ItemCard>) : RecyclerView.Adapte
     //La clase declarada como itemViewHolder hereda, es, un ViewHolder
     class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var menuToolbar: Toolbar
+        var itemToolbar: Toolbar
         private var imagen: ImageView
 
         init {
-            menuToolbar = itemView.findViewById(R.id.tbToolbar)
+            itemToolbar = itemView.findViewById(R.id.tbToolbar)
             imagen = itemView.findViewById(R.id.ivImage)
 
-            menuToolbar.inflateMenu(R.menu.menu_card)
+            //Asignamos a la toolbar un menu con el metodo inflateMenu
+            itemToolbar.inflateMenu(R.menu.menu_card)
         }
 
         fun bindTarjeta(item: ItemCard, onClick: (View) -> Unit) = with(itemView) {
-            menuToolbar.setTitle(item.titulo)
+            itemToolbar.setTitle(item.titulo)
 
             imagen.setImageResource(item.imagen)
             setOnClickListener { onClick(itemView) }
@@ -42,7 +43,7 @@ class ItemCardAdapter(var listaItems: ArrayList<ItemCard>) : RecyclerView.Adapte
         val itemCard = listaItems.get(pos)
         viewHolder.bindTarjeta(itemCard, onClick)
 
-        viewHolder.menuToolbar.setOnMenuItemClickListener(object: Toolbar.OnMenuItemClickListener{
+        viewHolder.itemToolbar.setOnMenuItemClickListener(object: Toolbar.OnMenuItemClickListener{
             override fun onMenuItemClick(item: MenuItem): Boolean{
                 when(item.itemId){
                     (R.id.action_copiar) ->{
