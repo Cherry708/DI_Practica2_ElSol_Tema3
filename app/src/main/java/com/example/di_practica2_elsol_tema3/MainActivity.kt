@@ -26,11 +26,12 @@ class MainActivity : AppCompatActivity() {
         val recView = findViewById<RecyclerView>(R.id.rvCards)
 
         recView.setHasFixedSize(true)
-        recView.layoutManager = GridLayoutManager(this,2)
-        recView.itemAnimator = DefaultItemAnimator()
+
 
         val adaptador = ItemCardAdapter(listaItems)
         recView.adapter = adaptador
+        recView.layoutManager = GridLayoutManager(this,2)
+        recView.itemAnimator = DefaultItemAnimator()
 
         adaptador.onClick = {
         }
