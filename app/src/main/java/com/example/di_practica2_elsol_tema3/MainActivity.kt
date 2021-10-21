@@ -46,7 +46,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val itemId = item.itemId
         when(item.itemId){
             (R.id.action_comparar) -> lanzarComparar()
         }
