@@ -16,4 +16,9 @@
 
     <string name="comparar">Comparar planetas</string>
     <string name="comparar_planetas">Comparar planetas</string>
+    <string name="diametro">Diametro</string>
+    <string name="distancia_al_sol">Distancia al sol</string>
+    <string name="densidad">Densidad</string>
+    <string name="introduce_un_planeta">Introduce un planeta</string>
+    <string name="introduce_otro_planeta">Introduce otro planeta</string>
 </resources>

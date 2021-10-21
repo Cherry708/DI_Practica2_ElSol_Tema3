@@ -4,63 +4,172 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
     tools:context=".CompararPlanetas">
 
     <TextView
         android:id="@+id/tvCompararPlanetas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="@string/comparar_planetas"
+        android:textColor="@color/black"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextView"
-        android:layout_width="160dp"
+        android:id="@+id/actvPlaneta0"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
+        android:hint="@string/introduce_un_planeta"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvCompararPlanetas" />
+        app:layout_constraintTop_toBottomOf="@+id/tvCompararPlanetas"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextView2"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/autoCompleteTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/autoCompleteTextView" />
-
-    <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/actvPlaneta1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/introduce_otro_planeta"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/actvPlaneta0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/actvPlaneta0"
+        tools:ignore="SpeakableTextPresentCheck"
+        />
+
+    <TextView
+        android:id="@+id/tvDiametro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Diametro"
-        android:textSize="16sp"
+        android:background="@color/black"
+        android:backgroundTint="@color/purple_200"
+        android:text="@string/diametro"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/actvPlaneta0" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvDiametroPlaneta0"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/purple_200"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="252dp" />
+        app:layout_constraintEnd_toEndOf="@+id/actvPlaneta0"
+        app:layout_constraintStart_toStartOf="@+id/actvPlaneta0"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiametro" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvDiametroPlaneta1"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:text="0"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/textView3"
-        tools:layout_editor_absoluteX="251dp" />
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/purple_200"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/actvPlaneta1"
+        app:layout_constraintStart_toStartOf="@+id/actvPlaneta1"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiametro" />
+
+    <TextView
+        android:id="@+id/tvDistancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/purple_200"
+        android:text="@string/distancia_al_sol"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiametro" />
+
+    <TextView
+        android:id="@+id/tvDensidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/purple_200"
+        android:text="@string/densidad"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDistancia" />
+
+    <TextView
+        android:id="@+id/tvDistanciaPlaneta0"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/purple_200"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/actvPlaneta0"
+        app:layout_constraintStart_toStartOf="@+id/actvPlaneta0"
+        app:layout_constraintTop_toBottomOf="@+id/tvDistancia" />
+
+    <TextView
+        android:id="@+id/tvDistanciaPlaneta1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/purple_200"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/actvPlaneta1"
+        app:layout_constraintStart_toStartOf="@+id/actvPlaneta1"
+        app:layout_constraintTop_toBottomOf="@+id/tvDistancia" />
+
+    <TextView
+        android:id="@+id/tvDensidadPlaneta0"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/purple_200"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/actvPlaneta0"
+        app:layout_constraintStart_toStartOf="@+id/actvPlaneta0"
+        app:layout_constraintTop_toBottomOf="@+id/tvDensidad"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tvDensidadPlaneta1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/purple_200"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/actvPlaneta1"
+        app:layout_constraintStart_toStartOf="@+id/actvPlaneta1"
+        app:layout_constraintTop_toBottomOf="@+id/tvDensidad" />
 </androidx.constraintlayout.widget.ConstraintLayout>
